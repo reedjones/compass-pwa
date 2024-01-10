@@ -33,18 +33,43 @@
         }
       }
 
-      #hero1 {
-        background-image:url("final2.svg");
+      .hero1 {
+        background:url("final2.svg"), rgb(246, 244, 233);
         background-size:contain;
       }
-      #hero2 {
-        background-image:url("img/final_text.svg");
+      .hero2 {
+        background:url("img/final_text.svg"), rgb(246, 244, 233);
         background-size:contain;
       }
-      #hero3 {
-        background-image:url("final3.svg");
+      .hero3 {
+        background:url("final3.svg"), rgb(246, 244, 233);
         background-size:contain;
       }
+      .hero4 {
+        background:url("final.svg"), rgb(246, 244, 233);
+        background-size:contain;
+      }
+      .hero5 {
+        background:url("dddfinal.svg"), rgb(246, 244, 233);
+        background-size:cover;
+        background-position:center;
+        background-attachment: fixed;
+      }
+      .hero6 {
+        background:url("final.svg"), rgb(246, 244, 233);
+        background-size:80%;
+        background-clip: border-box;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-attachment: fixed;
+        width:100%;
+        height: calc(0.664 * 100vw);
+      }
+
+      #main-hero-container {
+        display:inline-block;
+        width:100%;
+       }
 
       .title {
         font-size:var(--font-size-8);
@@ -65,19 +90,22 @@
     </a>
   </nav>
 </header>
+<!--    <div class="bg-light shadow-sm mx-auto hero4"-->
+<!--         style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>-->
 
-<main>
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" id="hero2">
-    <div class="col-md-5 p-lg-5 mx-auto my-5 gradient-container">
-      <h1 class="display-4 fw-normal title gradient1">Free Homes for Everyone</h1>
-      <p class="lead fw-normal">Join our movement to provide housing for all. Let's build a future where no one is without a home. Be part of the change!</p>
-      <a class="btn btn-outline-secondary" href="#">Get Involved</a>
-    </div>
-
-  </div>
+<main id="main-content">
+ <div id="main-hero-container">
+   <div class=" overflow-hidden p-3 p-md-5 m-md-3 text-center hero6">
+     <div class="col-md-5 p-lg-5 mx-auto my-5" id="main-hero-text-container">
+<!--       <h1 class="display-4 fw-normal title">Free Homes for Everyone</h1>-->
+<!--       <p class="lead fw-normal">Join our movement to provide housing for all. Let's build a future where no one is without a home. Be part of the change!</p>-->
+<!--       <a class="btn btn-outline-secondary" href="#">Get Involved</a>-->
+     </div>
+   </div>
+ </div>
 
   <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" id="hero3">
+    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
       <div class="my-3 py-3">
         <h2 class="display-5">Housing Equality</h2>
         <p class="lead">Join our cause for fair housing opportunities. Everyone deserves a place to call home.</p>
@@ -98,10 +126,50 @@
   <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
     <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
       <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
+        <h2 class="display-5">About Us</h2>
         <p class="lead">And an even wittier subheading.</p>
       </div>
-      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      <div class="bg-light shadow-sm mx-auto hero1"
+           style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Donate to [Your Organization Name]</h2>
+        <p class="lead">[Encouraging text about the importance of donations]</p>
+      </div>
+    </div>
+    <div class="bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" id="hero1">
+      <div class="my-3 py-3">
+        <form action="/donate" method="post">
+          <!-- Include your form fields here -->
+          <input type="text" name="amount" placeholder="Enter donation amount">
+          <button type="submit">Donate Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2>Join [Your Organization Name] Community</h2>
+        <p class="lead">And an even wittier subheading.</p>
+      </div>
+    </div>
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" id="hero3">
+      <div class="my-3 py-3">
+        <p>[Details about membership benefits and eligibility]</p>
+        <!-- Membership form -->
+        <form action="/join" method="post">
+          <!-- Include your form fields here -->
+          <input type="text" name="name" placeholder="Your Name">
+          <input type="email" name="email" placeholder="Your Email">
+          <button type="submit">Join Now</button>
+        </form>
+      </div>
     </div>
   </div>
 
@@ -112,40 +180,10 @@
         <p class="lead">And an even wittier subheading.</p>
       </div>
     </div>
-    <div class="bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" id="hero2">
       <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-    </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" id="hero1">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-    </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
+        <h2>Upcoming Events at [Your Organization Name]</h2>
+        <p>[Information about upcoming events, event highlights]</p>
       </div>
     </div>
   </div>
