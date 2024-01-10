@@ -8,6 +8,9 @@ dependencies:
   bootstrap:
     specifier: 5.3.2
     version: 5.3.2(@popperjs/core@2.11.8)
+  open-props:
+    specifier: ^1.6.17
+    version: 1.6.17
   postcss-jit-props:
     specifier: ^1.0.14
     version: 1.0.14(postcss@8.4.33)
@@ -480,6 +483,10 @@ packages:
   /normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
+    dev: false
+
+  /open-props@1.6.17:
+    resolution: {integrity: sha512-6mp/gpLQz/ZwrGLz+i7tSJ3eWNLE1KxLXHO+b6xxRyZ1Alp4TgTcvHiQ89rC2IkvsU3/IRhpIJuxl7rRCwUzLA==}
     dev: false
 
   /picocolors@1.0.0:
