@@ -5,7 +5,8 @@
   "main": "entry.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "vite"
+    "start": "vite",
+    "build": "vite build"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,8 @@
     "postcss-jit-props": "^1.0.14",
     "sass": "^1.69.7",
     "vite": "^5.0.11"
+  },
+  "devDependencies": {
+    "glob": "^10.3.10"
   }
 }
